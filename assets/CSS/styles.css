@@ -1,3 +1,5 @@
+/* These variables are designed to make it easy for me to 
+make adjustments and updates to the page on the fly */
 :root{
     --primary-color: #353e4d;
     --secondary-color: #c7e5ec;
@@ -8,12 +10,13 @@
 header {
     background: var(--primary-color);
     font-family: var(--primary-font);
-
 }
+
 main h2{
     padding: 10px;
 }
 
+/* This class enables flex placemnt and implments design changes for the nav bar */
 .nav {
     display: flex;
     justify-content: space-evenly;
@@ -22,6 +25,8 @@ main h2{
     color: var(--secondary-color);
 }
 
+/* This class allows me to control the look and feel of the page links as well 
+as utilize a psuedo class for my selector */
 .link {
     display: inline;
     background-color: var(--secondary-color);
@@ -33,6 +38,16 @@ main h2{
 
 .link:hover {
     border: 4px var(--selector-color) solid;
+}
+
+/* These classes and ID's allow me to control the look, feel and placment of the
+portfolio data */
+
+#portfolio{
+    font-size: 28px;
+    font-family: var(--primary-font);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .articlebio {
@@ -72,25 +87,6 @@ main h2{
     width: 25rem;
 }
 
-#bio {
-    font-size: 28px;
-    font-family: var(--primary-font);
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-}
-
-#biopic{
-    width: 100%;
-    background-color: var(--primary-color);
-}
-
-#portfolio{
-    font-size: 28px;
-    font-family: var(--primary-font);
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-}
-
 #firstpic{
     width: 100%;
 }
@@ -103,6 +99,20 @@ main h2{
     width: 100%;
 }
 
+/* These IDs let me control the look, feel and plament of the biography */
+#bio {
+    font-size: 28px;
+    font-family: var(--primary-font);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+#biopic{
+    width: 100%;
+    background-color: var(--primary-color);
+}
+
+/* These IDs control the look and feel of the contact information */
 #contact{
     font-size: 28px;
     text-align: center;
@@ -122,6 +132,7 @@ main h2{
     content: "Email:";
   }
 
+/* This controls the look, feel and placment of the footer   */
 footer {
     text-align: center;
     background-color: var(--primary-color);
@@ -129,6 +140,8 @@ footer {
     padding: 10px;
 }
 
+/* These media checks allow the page to scale and display nicely on
+different screen sizes */
 @media screen and (max-width: 768px) {
       .firstpicimagewraper {
           max-width: 35rem;

@@ -99,6 +99,10 @@ portfolio data */
     width: 100%;
 }
 
+#fourthpic{
+    width: 100%;
+}
+
 /* These IDs let me control the look, feel and plament of the biography */
 #bio {
     font-size: 28px;
